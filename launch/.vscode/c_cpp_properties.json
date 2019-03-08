@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/sayter/ros_ws/devel/include",
+        "/opt/ros/kinetic/include",
+        "/home/sayter/ros_ws/src/aruco_ros/aruco/include",
+        "/home/sayter/ros_ws/src/aruco_ros/aruco_ros/include",
+        "/home/sayter/ros_ws/src/chwu5235/homework4/include",
+        "/home/sayter/ros_ws/src/chwu5235/homework5/include",
+        "/home/sayter/ros_ws/src/move_sawyer_head/include",
+        "/home/sayter/ros_ws/src/pololu/include",
+        "/home/sayter/ros_ws/src/robograndson/include",
+        "/home/sayter/ros_ws/src/sawyer_simulator/sawyer_gazebo/include",
+        "/home/sayter/ros_ws/src/sawyer_simulator/sawyer_hardware_interface/include",
+        "/home/sayter/ros_ws/src/sawyer_simulator/sawyer_sim_controllers/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}
