@@ -1,17 +1,17 @@
 <launch>
-  <arg name="ms_ip" default="$(env ROS_IP)" />
-  <arg name="rb_ip" default="rock64" />
+  <arg name="ms_ip" default="rock64" />
+  <arg name="nb_ip" default="$(env ROS_NB_IP)" />
 
-  <machine name="ms" address="$(arg ms_ip)" user="sayter" />
-  <node machine="ms" pkg="pololu" type="keyboardControl" name="keyboardControl" output="screen" />
+  <machine name="ms" address="$(arg ms_ip)" user="rock64" />
+  <node machine="ms" pkg="pololu" type="pololuControl" name="motor" output="screen" />
 
-  <machine name="rock64"
-           address="$(arg rb_ip)"
-           user="rock64"
-           env-loader="/home/rock64/catkin_ws/env.sh"
+  <machine name="nb"
+           address="$(arg nb_ip)"
+           user="sayter"
+           env-loader="/home/sayter/ros_ws/scripts/env.sh"
            ssh-port="22"
            timeout="20" />
-  <node machine="rock64" pkg="pololu" type="pololuControl" name="motor" />
+  <node machine="nb" pkg="pololu" type="keyboardControl" name="keyboardControl" />
   
 </launch>
 
